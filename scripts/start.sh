@@ -21,7 +21,7 @@ chmod -R 750 /opt/scripts
 chown -R ${UID}:${GID} ${DATA_DIR}
 
 term_handler() {
-	kill -SIGTERM $(pidof python3)
+	kill -SIGINT $(pidof python3)
 	sleep 0.5
 	exit 143;
 }
