@@ -8,7 +8,8 @@ RUN apt-get update && \
 	make -j$(nproc --all) && \
 	DESTDIR=/tmp/out make install && \
 	git clone https://github.com/Pesc0/jdupes-gui.git /tmp/jdupes-gui && \
-	cp /tmp/jdupes-gui/jdupes-gui /tmp/out/usr/bin/
+	cp /tmp/jdupes-gui/jdupes-gui /tmp/out/usr/bin/ && \
+	chmod +x /tmp/out/usr/bin/*
 
 FROM ich777/novnc-baseimage
 
