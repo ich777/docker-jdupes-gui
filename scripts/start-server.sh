@@ -46,3 +46,7 @@ sleep 2
 
 echo "---Container under construction!---"
 sleep infinity
+
+echo "---Starting jdupes-gui---"
+cd ${DATA_DIR}
+/usr/bin/jdupes-gui
