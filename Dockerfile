@@ -1,7 +1,7 @@
 FROM ich777/debian-baseimage as builder
 
 RUN apt-get update && \
-	apt-get -y install --no-install-recommends git build-essentials && \
+	apt-get -y install --no-install-recommends git build-essential && \
 	git clone https://github.com/jbruchon/jdupes.git /tmp/jdupes && \
 	cd /tmp/jdupes && \
 	sed -i "/PREFIX = \/usr\/local/c\PREFIX = \/usr" /tmp/jdupes/Makefile && \
