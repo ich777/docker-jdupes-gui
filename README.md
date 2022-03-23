@@ -3,7 +3,7 @@ jdupes is a command line program for identifying and taking actions upon duplica
 
 **A WORD OF WARNING:** jdupes IS NOT a drop-in compatible replacement for fdupes!
 
-**ATTENTION:** A minor inconvenience is caused by the fact that the script is single-threaded. This causes the application to seemingly hang when running long jobs like searching through large folders or deleting large batches of files. Please be patient, it is still working.
+**ATTENTION:** A minor inconvenience is caused by the fact that the jdupes-gui script is single-threaded. This causes the application to seemingly hang when running long jobs like searching through large folders or deleting large batches of files. Please be patient, it is still working.
 
 **WARNING:** Please always double check what you are deleting in the containers since this affects the files on your Server and you won't be able to recover them!!!
 
