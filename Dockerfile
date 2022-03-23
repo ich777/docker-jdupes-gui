@@ -11,6 +11,7 @@ RUN apt-get update && \
 	sed -i "/.*\s*Open file/, /)*btt_box.pack_start(self.openfile_btt, False, True, 0)/ s|^|#|" /tmp/jdupes-gui/jdupes-gui && \
 	sed -i "/.*\s*Open containing folder/, /)*btt_box.pack_start(self.openfilexplorer_btt, False, True, 0)/ s|^|#|" /tmp/jdupes-gui/jdupes-gui && \
 	sed -i "/.*\s*Move to trash/, /)*trash_btt.get_style_context().add_class(Gtk.STYLE_CLASS_SUGGESTED_ACTION)/ s|^|#|" /tmp/jdupes-gui/jdupes-gui && \
+	sed -i '/dialog.add_action_widget(trash_btt, Gtk.ResponseType.OK)/ s/^#*/#/' /tmp/jdupes-gui/jdupes-gui && \
 	cp /tmp/jdupes-gui/jdupes-gui /tmp/out/usr/bin/ && \
 	chmod +x /tmp/out/usr/bin/*
 
