@@ -26,11 +26,11 @@ if [ -z "${CUSTOM_RES_H} ]; then
 fi
 
 if [ "${CUSTOM_RES_W}" -le 1279 ]; then
-	echo "---Width to low must be a minimal of 1024 pixels, correcting to 1024...---"
+	echo "---Width to low must be a minimum of 1280 pixels, correcting to 1280...---"
     CUSTOM_RES_W=1280
 fi
 if [ "${CUSTOM_RES_H}" -le 849 ]; then
-	echo "---Height to low must be a minimal of 768 pixels, correcting to 768...---"
+	echo "---Height to low must be a minimum of 850 pixels, correcting to 850...---"
     CUSTOM_RES_H=850
 fi
 
