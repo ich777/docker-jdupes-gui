@@ -37,7 +37,7 @@ docker run --name jdupes-gui -d \
 
 ### Webgui address: http://[SERVERIP]:[PORT]/vnc.html?autoconnect=true
 
-## Set noVNC Password:
+## Set VNC Password:
  Please be sure to create the password first inside the container, to do that open up a console from the container (Unraid: In the Docker tab click on the container icon and on 'Console' then type in the following):
 
 1) **su $USER**
