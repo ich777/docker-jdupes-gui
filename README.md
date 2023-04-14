@@ -1,3 +1,5 @@
+# DEPRECATED
+
 # jdupes and jdupes-gui in Docker optimized for Unraid
 jdupes is a command line program for identifying and taking actions upon duplicate files combined with jdupes-gui it becomes a usefull tool for identifying duplicated files on your server.
 
